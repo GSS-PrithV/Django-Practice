@@ -1,0 +1,22 @@
+<h1>Members</h1>
+
+<style>
+    p{font-family:cursive}
+</style>
+
+<p>Welcome to my first django project. This website was my first step into using django and coding with html.</p>
+<P><a href ="https://github.com/GSS-PrithV" target="_blank">My Github</a></P>
+<table border = "1">
+    {% for x in mymembers %}
+    <tr>
+        <td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+        <td>{{ x.firstname }}</td>
+        <td>{{ x.lastname }}</td>
+        <td><a href = "delete/{{ x.id }}">delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+<p>
+    <a href = "add/"> Add member</a>
+</p>
