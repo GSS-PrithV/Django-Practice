@@ -1,2 +1,2 @@
 # Django-Practice
-Very basic django tutorial. Website that holds a updatable members list.
+Website that holds a updatable members list using Django.
